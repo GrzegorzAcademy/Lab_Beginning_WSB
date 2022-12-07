@@ -7,6 +7,9 @@ public class Main {
         dog.takeForWalk();
         dog.feed();
         dog.feed();
+        Human human1 = new Human();
+        human1.car = new Car("BMW","550li",4800);
+
 
 
     }
