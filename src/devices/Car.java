@@ -1,3 +1,5 @@
+package devices;
+
 public class Car {
     final String producer;
     final String model;
@@ -25,5 +27,15 @@ public class Car {
 
     public void setValue(double value) {
         this.value = value;
+    }
+
+    @Override
+    public String toString() {
+        return "devices.Car{" +
+                "producer='" + producer + '\'' +
+                ", model='" + model + '\'' +
+                ", capacity=" + capacity +
+                ", value=" + value +
+                '}';
     }
 }

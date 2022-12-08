@@ -1,9 +1,20 @@
+import devices.Car;
+
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Human {
     LocalDateTime now = LocalDateTime.now();
     private Car car;
+
+    public Animal getPet() {
+        return pet;
+    }
+
+    public void setPet(Animal pet) {
+        this.pet = pet;
+    }
+
     Animal pet;
     private Double salary;
 
@@ -38,5 +49,14 @@ public class Human {
             this.car = car;
         } else
             System.out.println("zapisz sie na studia, lub poproś szefa o podwyzkę");
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                ", car=" + car +
+                ", pet=" + pet.species +
+                ", salary=" + salary +
+                '}';
     }
 }
