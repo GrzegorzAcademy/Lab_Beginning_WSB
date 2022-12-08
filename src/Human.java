@@ -53,9 +53,7 @@ public class Human {
 
     @Override
     public String toString() {
-        return "Human{" +
-                ", car=" + car +
-                ", pet=" + pet.species +
+        return "pet=" + pet.species +
                 ", salary=" + salary +
                 '}';
     }

@@ -1,14 +1,13 @@
 package devices;
 
-public class Car {
-    final String producer;
-    final String model;
+public class Car extends Device {
+
+
     private int capacity;
     private double value;
 
-    public Car(String producer, String model, int capacity, double value) {
-        this.producer = producer;
-        this.model = model;
+    public Car(String producer, String model, int yearOfProduction, int capacity, double value) {
+        super(producer, yearOfProduction, model);
         this.capacity = capacity;
         this.value = value;
     }
@@ -30,12 +29,17 @@ public class Car {
     }
 
     @Override
+   public void turnOn() {
+        System.out.println("Samochód został uruchomiony");
+    }
+
+    @Override
     public String toString() {
-        return "devices.Car{" +
-                "producer='" + producer + '\'' +
-                ", model='" + model + '\'' +
-                ", capacity=" + capacity +
+        return "Car " +
+                "capacity = " + capacity +
                 ", value=" + value +
-                '}';
+                ", producer='" + producer + '\'' +
+                ", yearOfProduction=" + yearOfProduction +
+                ", model='" + model;
     }
 }

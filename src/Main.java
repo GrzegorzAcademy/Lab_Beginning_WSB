@@ -1,20 +1,22 @@
 import devices.Car;
+import devices.Phone;
 
 public class Main {
     public static void main(String[] args) {
+
         System.out.println("Hello world!");
-        Animal cat = new Animal("cat");
-        Animal dog = new Animal("dog");
+//        Animal cat = new Animal("cat");
+//        Animal dog = new Animal("dog");
 //        cat.takeForWalk();
 //        dog.takeForWalk();
 //        dog.feed();
 //        dog.feed();
-        Human human1 = new Human();
-////        human1.car = new devices.Car("BMW", "550li", 4800);
+//        Human human1 = new Human();
+//        human1.car = new devices.Car("BMW", "550li", 4800);
 //        System.out.println("-------------");
-        human1.setSalary(1500.0);
+//        human1.setSalary(1500.0);
 //        System.out.println(human1.getSalary());
-        System.out.println("------------------");
+//        System.out.println("------------------");
 //        human1.setCar(new devices.Car("BMW", "550li", 4800));
 
 //        System.out.println("Człowiek 1 ma auto : " + human1.getCar().producer +
@@ -32,12 +34,18 @@ public class Main {
 //        System.out.println(human1.getCar().producer +
 //                " model : " + human1.getCar().model);
 
-        Car car1 = new Car("Audi","A4",2000,180000);
-        Car car2 = new Car("Audi","A4",2000,180000);
-        System.out.println(car2==car1);
-        System.out.println(car2.toString());
-        human1.setCar(car1,15000);
-        human1.setPet(cat);
-        System.out.println(human1.toString());
+//        Car car1 = new Car("Audi","A4",2012,180000,25000);
+//        Car car2 = new Car("Audi","A4",2012,180000,25000);
+//        System.out.println(car2==car1);
+//        System.out.println(car2);
+//        human1.setCar(car1,15000);
+//        human1.setPet(cat);
+//        System.out.println(human1);
+        Car car = new Car("Audi", "A4", 2012, 1800, 25000);
+        System.out.println(car);
+        car.turnOn();
+        Phone phone1 = new Phone("Nokia", 2020, "3320");
+        phone1.turnOn();
+        System.out.println(phone1);
     }
 }
