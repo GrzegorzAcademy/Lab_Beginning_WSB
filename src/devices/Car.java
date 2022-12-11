@@ -1,5 +1,6 @@
 package devices;
 
+
 public class Car extends Device {
 
 
@@ -29,7 +30,7 @@ public class Car extends Device {
     }
 
     @Override
-   public void turnOn() {
+    public void turnOn() {
         System.out.println("Samochód został uruchomiony");
     }
 
@@ -42,4 +43,6 @@ public class Car extends Device {
                 ", yearOfProduction=" + yearOfProduction +
                 ", model='" + model;
     }
+
 }
+

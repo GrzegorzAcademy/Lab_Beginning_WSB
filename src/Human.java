@@ -4,6 +4,16 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class Human {
+    private Double cash;
+
+    public Double getCash() {
+        return cash;
+    }
+
+    public void setCash(Double cash) {
+        this.cash = cash;
+    }
+
     LocalDateTime now = LocalDateTime.now();
     private Car car;
 
@@ -57,4 +67,10 @@ public class Human {
                 ", salary=" + salary +
                 '}';
     }
+
+
+    public void sell(Human seller, Human buyer, Double price) {
+
+    }
 }
+

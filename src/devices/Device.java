@@ -1,6 +1,6 @@
 package devices;
 
-abstract class Device {
+public  abstract class Device{
     final String producer;
     final int yearOfProduction;
     final String model;

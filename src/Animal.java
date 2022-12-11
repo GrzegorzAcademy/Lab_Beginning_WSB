@@ -1,10 +1,13 @@
-public class Animal {
+
+
+public class Animal implements sellable {
     final String species;
     private Double weight;
     public static final double DEFOULT_WEIGHT_CAT = 5;
     public static final double DEFOULT_WEIGHT_DOG = 15;
     public static final double DEFOULT_WEIGHT_ANIMAL = 50;
     boolean isAlive = true;
+
 
     public Animal(String species) {
         this.species = species;
@@ -33,5 +36,17 @@ public class Animal {
         } else {
             System.out.println("Dziękuję za spacer");
         }
+    }
+
+    @Override
+    public void sell(Human seller, Human buyer, Double price) {
+        if(seller.pet!=null){
+          if (buyer.getCash()>price)
+              seller.setCash(seller.getSalary()-price);
+            System.out.println("transakcja została dokonana : " );
+            System.out.println(" sprzedający stracił " + seller.getCash()
+                    + "zł" + "Kupujący zyskał " + buyer.getCash() + " zł" );
+        }
+
     }
 }
