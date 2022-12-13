@@ -1,3 +1,5 @@
+package creatures;
+
 import devices.Car;
 
 import java.time.LocalDateTime;
@@ -23,6 +25,7 @@ public class Human {
 
     public void setPet(Animal pet) {
         this.pet = pet;
+
     }
 
     Animal pet;
@@ -66,11 +69,6 @@ public class Human {
         return "pet=" + pet.species +
                 ", salary=" + salary +
                 '}';
-    }
-
-
-    public void sell(Human seller, Human buyer, Double price) {
-
     }
 }
 

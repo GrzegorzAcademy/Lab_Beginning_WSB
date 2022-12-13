@@ -7,7 +7,8 @@ public class Car extends Device {
     private int capacity;
     private double value;
 
-    public Car(String producer, String model, int yearOfProduction, int capacity, double value) {
+    public Car(String producer, String model, int yearOfProduction,
+               int capacity, double value) {
         super(producer, yearOfProduction, model);
         this.capacity = capacity;
         this.value = value;

@@ -1,3 +1,5 @@
+
+import creatures.Human;
 import devices.Car;
 import devices.Phone;
 
@@ -47,5 +49,20 @@ public class Main {
         Phone phone1 = new Phone("Nokia", 2020, "3320");
         phone1.turnOn();
         System.out.println(phone1);
+        Human human1 = new Human();
+        human1.setSalary(25000.0);
+//        Animal animal = new Animal("Cat");
+        human1.setCash(25000.0);
+//        human1.setPet(animal);
+        System.out.println(human1.getCash());
+        System.out.println(human1.getSalary());
+        Human human2 = new Human();
+        human2.setCash(12000.0);
+        human2.setSalary(20000.0);
+        human2.getCash();
+
+//        animal.sell(human1, human2, 200.0);
+        System.out.println("---------");
+
     }
 }
