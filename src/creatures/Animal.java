@@ -1,5 +1,4 @@
 package creatures;
-
 abstract class Animal implements Sellable,Feedable {
 
     Double foodWeight;
@@ -32,6 +31,11 @@ abstract class Animal implements Sellable,Feedable {
             weight += 0.5;
         } else
             System.out.println("Trochę za pożno");
+    }
+
+    @Override
+    public void feed(double foodWeight) {
+
     }
 
     void takeForWalk() {
@@ -68,7 +72,6 @@ abstract class Animal implements Sellable,Feedable {
             System.out.println("zwierzę zamieniło właściciela ");
             System.out.println("stan konta kupującego po transakcji " + seller.getCash()+ " zł" + " \n"
                     + "Stan konta sprzedającego po transakcji " + buyer.getCash() + " zł");
-        }
-
-    }
+        }else
+            System.out.println("Sprzedajacy nie posiada zwierzaka");    }
 }
