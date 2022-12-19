@@ -1,5 +1,9 @@
-package creatures;
-abstract class Animal implements Sellable,Feedable {
+package nagorski.creatures;
+
+import nagorski.Feedable;
+import nagorski.Sellable;
+
+abstract class Animal implements Sellable, Feedable {
 
     Double foodWeight;
     final String species;
@@ -61,7 +65,7 @@ abstract class Animal implements Sellable,Feedable {
     }
 
 
-    public void sell(Human seller, Human buyer, Double price) {
+    public void sell(nagorski.creatures.Human seller, nagorski.creatures.Human buyer, Double price) {
         if (seller.pet != null) {
             if (buyer.getCash() > price)
                 seller.setCash(seller.getSalary() - price);

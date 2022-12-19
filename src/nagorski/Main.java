@@ -1,4 +1,6 @@
-import devices.Phone;
+package nagorski;
+
+import nagorski.devices.Phone;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,25 +13,25 @@ public class Main {
 //        dog.feed();
 //        dog.feed();
 //        Human human1 = new Human();
-//        human1.car = new devices.Car("BMW", "550li", 4800);
+//        human1.car = new nagorski.Car("BMW", "550li", 4800);
 //        System.out.println("-------------");
 //        human1.setSalary(1500.0);
 //        System.out.println(human1.getSalary());
 //        System.out.println("------------------");
-//        human1.setCar(new devices.Car("BMW", "550li", 4800));
+//        human1.setCar(new nagorski.devices.Car("BMW", "550li", 4800));
 
 //        System.out.println("Człowiek 1 ma auto : " + human1.getCar().producer +
 //                " model : " + human1.getCar().model);
 
-//        human1.setCar(new devices.Car("Bmw", "330", 3400, 150_000), 150_0000);
+//        human1.setCar(new nagorski.devices.Car("Bmw", "330", 3400, 150_000), 150_0000);
 //        System.out.println(human1.getCar().producer +
 //                " model : " + human1.getCar().model);
 //        System.out.println("---------");
-//        human1.setCar(new devices.Car("Bmw", "330", 3400, 150000), 15000);
+//        human1.setCar(new nagorski.Car("Bmw", "330", 3400, 150000), 15000);
 //        System.out.println(human1.getCar().producer +
 //                " model : " + human1.getCar().model);
 //        System.out.println("---------");
-//        human1.setCar(new devices.Car("Bmw", "330", 3400, 150000), 1500);
+//        human1.setCar(new nagorski.Car("Bmw", "330", 3400, 150000), 1500);
 //        System.out.println(human1.getCar().producer +
 //                " model : " + human1.getCar().model);
 

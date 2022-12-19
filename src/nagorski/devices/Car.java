@@ -1,7 +1,10 @@
-package devices;
+package nagorski.devices;
 
 
-public class Car extends Device {
+import nagorski.Sellable;
+import nagorski.creatures.Human;
+
+public abstract class Car extends Device implements Sellable {
 
 
     private int capacity;
@@ -45,5 +48,17 @@ public class Car extends Device {
                 ", model='" + model;
     }
 
+    @Override
+    public void sell(Human seller, Human buyer, Double price) {
+        if (seller.getCar() != null) {
+            if (buyer.getCash() > price)
+                seller.setCash(seller.getSalary() - price);
+            buyer.setCash(buyer.getSalary() + price);
+            buyer.setPet(seller.getPet());
+            seller.setCar(null);
+            System.out.println("transakcja została dokonana : ");
+            System.out.println("Samochód  zamienił właściciela ");
+        }
+    }
+   abstract void refuel();
 }
-

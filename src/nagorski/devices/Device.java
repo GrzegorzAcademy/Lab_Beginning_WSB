@@ -1,4 +1,4 @@
-package devices;
+package nagorski.devices;
 
 public  abstract class Device {
     final String producer;

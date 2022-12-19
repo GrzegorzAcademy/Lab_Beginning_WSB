@@ -1,4 +1,4 @@
-package creatures;
+package nagorski.creatures;
 
 public class FarmAnimal extends Animal implements Edbile {
     public FarmAnimal(String species) {

@@ -1,6 +1,6 @@
-package creatures;
+package nagorski.creatures;
 
-import devices.Car;
+import nagorski.devices.Car;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -18,6 +18,10 @@ public class Human {
 
     LocalDateTime now = LocalDateTime.now();
     private Car car;
+
+    public void setCar(Car car) {
+        this.car = car;
+    }
 
     public Animal getPet() {
         return pet;

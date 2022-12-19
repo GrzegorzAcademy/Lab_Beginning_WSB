@@ -1,4 +1,4 @@
-package creatures;
+package nagorski;
 
 public interface Feedable {
     void feed();
